@@ -1,13 +1,144 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: rgb(74,74,74);
+  background: radial-gradient(circle, rgba(74,74,74,1) 0%, rgba(50,50,50,1) 100%);
+  font-family: DM Sans, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  position: relative;
+  width: 335px;
+  height: 667px;
+  background-color: #f3eee8;
+  overflow: scroll;
+  border-radius: 40px;
+  border: 15px black solid;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 25px auto;
+  /* cursor:  */
+  -webkit-box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.3); 
+  box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.3);
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  #root {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+    min-width: 350px;
+  }
+}
+
+#root::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: Voyage, sans-serif;
+}
+
+nav {
+  border-bottom: 1px rgba(0, 0, 0, .07) solid;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0 20px 20px 20px;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.nav li {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, .02);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+ul.nav li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.formElement {
+  font-family: DM Sans, sans-serif;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formTextArea {
+  width: 80%;
+  font-family: DM Sans, sans-serif;
+}
+
+.createPost {
+  background-color: rgba(167, 201, 232, .3) !important;
+}
+
+.postPreview {
+  background-color: rgba(0, 0, 0, .05);
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+
+.author {
+  color: #777;
+  font-size: .8em;
+}
+
+.deleteBtn {
+  color: #ba0606;
+  font-size: .8em;
+  cursor: pointer;
+}
+
+footer {
+  top: 0;
+  padding: 5px 0;
+  margin: 0 40px;
+  background-color: #a7c9e8;
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  font-size: .8em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Voyage';
+  src: url('https://uploads-ssl.webflow.com/62bad1737c3a9d31db7a2ea5/62bb761f84a0e2d1bdff639f_Voyage-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Voyage';
+  src: url('https://uploads-ssl.webflow.com/62bad1737c3a9d31db7a2ea5/62bb76091033a5882872c344_Voyage-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }

@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+/* ------------------------------------------------------ */
+/* .section.grain {
+  background-image: url("https://uploads-ssl.webflow.com/62bad1737c3a9d31db7a2ea5/62bad1737c3a9decfa7a2ee7_Grain_Latest.png");
+  background-position: 0 0;
+  background-size: 300px 300px;
+} */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
